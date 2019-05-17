@@ -67,7 +67,7 @@ public class SnakeModel extends GameModel {
 	private final int INITIAL_SNAKE_LENGTH = 20;
 	
 	/** The amount of fruit on the game pane */
-	private final int FRUIT_AMOUNT = 1;
+	private final int FRUIT_AMOUNT = 3;
 	
 	/** The size of the board */
 	private final int GAME_BOARD_SIZE = getGameboardSize().height * getGameboardSize().width;
@@ -129,7 +129,7 @@ public class SnakeModel extends GameModel {
 	 * Add a fruit to the game board at a random position.
 	 */
 	private void addFruit() {
-		Position newFruitPos;
+		Position newFruitPos;           
 		Dimension size = getGameboardSize();
 		// Loop until a blank position is found and ...
 		do {
